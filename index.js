@@ -11,13 +11,13 @@ const firebase = require('firebase');
 const moment = require('moment');
 
 var configf = {
-  apiKey: "AIzaSyDSiwor1-lxXRNwZ9JoYqRG1fOxuEdyfvU",
-  authDomain: "kitsunemi-417d5.firebaseapp.com",
-  projectId: "kitsunemi-417d5",
-  storageBucket: "kitsunemi-417d5.appspot.com",
-  messagingSenderId: "1066573681655",
-  appId: "1:1066573681655:web:800a79f9b1347b494dd4f2",
-  measurementId: "G-ZPTGHJ73BM"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 // Initialize Firebase
 firebase.initializeApp(configf);
