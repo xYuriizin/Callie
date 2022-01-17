@@ -1,1 +1,1 @@
-credits: recon#0001 
+credits for the commands/events handler: recon#0001 
