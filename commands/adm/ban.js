@@ -12,14 +12,6 @@ module.exports = {
         let reason = args.slice(1).join(" ");
         if (!reason) reason = "Motivo não inserido";
 
-        const embed = new MessageEmbed()
-        .setTitle(`Você foi banido do servidor **${message.guild.name}**`)
-        .setDescription(`> Se você acha que foi um ban injusto entre em contato com o responsável!`)
-        .addField(`**Motivo**`, reason)
-        .addField(`**Responsável**`, `\`${message.author.tag} - ${message.author.id}\``)
-        .setColor("RED")
-        .setTimestamp();
-
         if (!message.member.hasPermission("BAN_MEMBERS")) return message.inlineReply(`${message.author}, Você precisa da permissão \`Banir membros\` para usar esse comando!`)
 
         if (!message.guild.me.hasPermission('BAN_MEMBERS')) return message.inlineReply(`${message.author}, Eu preciso da permissão \`Banir membros\` para usar esse comando!`)
